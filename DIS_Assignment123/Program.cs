@@ -256,7 +256,7 @@ namespace Assignment1
             catch
             {
                 Console.WriteLine("Error Occured ");
-                return 0
+                return 0;
             }
 
 
