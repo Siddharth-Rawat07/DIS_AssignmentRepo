@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Asgn
+namespace Assignment1
 {
     class Program
     {
@@ -44,10 +44,7 @@ namespace Asgn
         {
             try
             {
-                if (x > y)
-                {
-                    throw new Exception();
-                }
+                
                 /* This is to find Self Dividing Numbers in the range x to y when we run a for loop
                    Staring from x till y to call isSelfDiving function which checks if the number is Self Dividing */
                 for (int i = x; i <= y; i++)
@@ -59,10 +56,7 @@ namespace Asgn
             catch
             {
                 Console.WriteLine("Exception occured while computing printSelfDividingNumbers()");
-                if (x > y)
-                {
-                    Console.WriteLine("Cannot Compute because x = " + x + " is greater than y = " + y);
-                }
+                
             }
         }
         public static void SelfDivisionTest(int x)
@@ -98,9 +92,10 @@ namespace Asgn
                 {
                     for (int j = 1; j <= i; j++)
                     {
-                        Console.WriteLine(i);
+                        Console.Write(i+" ");
                     }
                 }
+                Console.WriteLine();
 
             }
             catch
@@ -174,7 +169,7 @@ namespace Asgn
                 Console.WriteLine("Exception occured while computing getLargestCommonSubArray()");
             }
 
-            return null; // return the actual array
+            return null; 
         }
 
         public static void solvePuzzle()
@@ -198,7 +193,7 @@ namespace Asgn
 
                 char[] unique_all = set_unique.ToArray();
                 
-                int infi = 1;// To use in while loop
+                int infi = 1;
                 
                 while (infi == 1)
                 {
@@ -260,8 +255,8 @@ namespace Asgn
             }
             catch
             {
-                Console.WriteLine("Error while generating random values");
-                return 0;
+                Console.WriteLine("Error Occured ");
+                return 0
             }
 
 
